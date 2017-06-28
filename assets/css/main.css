@@ -115,7 +115,7 @@ footer {
 }
 
 footer .legaleAndCredits{
-    float: left;
+    float: right;
 }
 
 footer .legaleAndCredits ul li{
@@ -125,17 +125,17 @@ footer .legaleAndCredits ul li{
 }
 
 footer .social_media{
-    width: 290px;
+    width: 150px;
     margin-left: auto;
     margin-right: auto;
     overflow: hidden;
-    float: right;
+    float: left;
 }
 
 footer .social_media ul li{
     float: right;
     list-style-type: none;
-    padding: 5%;
+    padding: 8%;
 }
 
 footer .social_media ul li .facebook{
@@ -341,7 +341,51 @@ button:focus {
         display: none;
     }
     
+    #burgerMenu ul {
+        transform: translateY(20%);
+    }
+    
     footer h5{
         margin-left: 5%;
+    }
+    
+    #popUpBooking{
+        height: 100vh;
+        width: 100vw;
+        margin: 0;
+        top: 0;
+        left: 0;
+    }
+    
+    #popUpBooking .table{
+        border-right: solid 1px black;
+        box-sizing: border-box;
+    } 
+    
+    #popUpBooking .table span:before {
+        margin-top: 100px;
+    }
+    
+    #popUpBooking .room span:before{
+        margin-top: 100px;
+    }
+    
+    footer{
+        padding-top: 50px;
+    }
+    
+    footer .social_media{
+        float: none;
+    }
+    
+    footer .legaleAndCredits{
+        float: none;
+        margin-left: 50px;
+    }
+}
+    
+@media screen and (max-width: 700px){
+    #burgerMenu ul {
+        transform: translateY(10%);
     }
 }

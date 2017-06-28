@@ -261,7 +261,8 @@ $(document).ready(function () {
         $("#popUpBooking").fadeOut();
         $(".opacityMask").fadeOut();
     })
-    $("#bookingButton").click(function(){
+    $(".bookingButton").click(function(){
+        $("#burgerMenu").fadeOut();
         $("#popUpBooking").fadeIn();
         $(".opacityMask").fadeIn();
     })

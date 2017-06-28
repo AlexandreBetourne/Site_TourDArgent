@@ -12,13 +12,15 @@
     <link rel="icon" type="image/png" href="../static/images/logo_icon.png">
 </head>
 <body>
+
+    <!-- HEADER -->
     <header>
 			<nav id="normal">
 				<ul>
 					<li><a href="/menu"><span>CARTE ET MENUS</span></a></li>
 					<li><a href="/restaurant"><span>LE RESTAURANT</span></a></li>
 					<li><a href="/"><img src="../static/images/logo_header.png" width="60px"></a></li>
-					<li id="bookingButton"><span>RESERVATION</span></li>
+					<li class="bookingButton"><span>RESERVATION</span></li>
 					<a href="/access"><li><span>ACCÈS</span></li></a>
 				</ul>
 			</nav>
@@ -28,6 +30,7 @@
 				</ul>
 			</nav>
     </header>
+    
     <h2>MENTIONS LÉGALES</h2>
     <p>La Tour d’Argent, société anonyme au capital de 4.573.471 euros, dont le siège social est situé 15-17, quai de la Tournelle, 75005 Paris (+33 (0)1 43 54 23 31), immatriculée sous le numéro RCS Paris B 349 610 006 est l’éditeur du site web de la Tour d’Argent.</p>
     <p>Le directeur de la publication est Monsieur André Terrail.</p>
@@ -49,13 +52,8 @@
     <p>En aucun cas, La Tour d’Argent ne peut être tenue pour responsable d’un quelconque dommage direct ou indirect, quelle qu’en soit la nature, découlant de l’utilisation de son site Internet.</p>
     <p>© La Tour d’Argent 2017</p>
     
+    <!-- FOOTER -->
     <footer>
-        <div class="legaleAndCredits">
-            <ul>
-                <li><a href="/mentions_legales">Mentions Légales</a></li>
-                <li><a href="/credit">Crédits</a></li>
-            </ul>
-        </div>
         <div class="social_media">
             <ul>
                 <li><a href="https://www.facebook.com/latourdargent/?ref=br_rs" class="facebook"></a></li>
@@ -63,8 +61,29 @@
                 <li><a href="https://twitter.com/latourdargent?lang=fr" class="twitter"></a></li>
             </ul>
         </div>
+        <div class="legaleAndCredits">
+            <ul>
+                <li><a href="/mentions_legales">Mentions Légales</a></li>
+                <li><a href="/credit">Crédits</a></li>
+            </ul>
+        </div>
     </footer>
     
+    <!-- MENU BURGER -->
+    <div id="burgerMenu">
+        <a type="button" id="hideBurger">
+            <img src="static/images/picto/noun_1014483_cc.png">
+        </a>
+        <ul>
+            <li><a href="menu">CARTE ET MENUS</a></li>
+            <li><a href="/restaurant">LE RESTAURANT</a></li>
+            <li class="flag"><a href="/">ACCUEIL</a></li>
+            <li class="bookingButton">RESERVATION</li>
+            <a href="/access"><li>ACCÈS</li></a>
+        </ul>
+    </div>
+    
+    <!-- POP UP BOOKING -->
     <div id="popUpBooking">
 	    <div class="table">
 	        <span>TABLE</span>
@@ -85,5 +104,8 @@
             <a class="closeButton" href="javascript:;">FERMER</a>
         </form>
     </div>
+    
+    
+    <div class="opacityMask"></div>
 </body>
 </html>

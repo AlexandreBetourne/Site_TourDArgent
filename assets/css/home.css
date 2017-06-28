@@ -66,8 +66,8 @@
 }
 
 #presentation {
+    padding: 0 0 100px 0;
     width: 100%;
-    height: 600px;
     background-color: white;
     text-align: center;
     font-family: 'Playfair Display', serif;
@@ -310,6 +310,10 @@
         margin-top: 50px;
     }
     
+    .arrow2{
+        margin: 10px 0 0 -20px;
+    }
+    
     #main #menue{
         float: none;
         width: 100%;
@@ -319,6 +323,7 @@
     #main #img_right{
         float: none;
         width: 100%;
+        height: 400px;
         background-attachment: scroll;
         background-size:100%;
     }
@@ -335,5 +340,40 @@
     #main #eboutique{
         float: none;
         width: 100%;
+    }
+}
+
+@media screen and (max-width: 600px){
+    .arrow,.arrow:before{
+        top: 65%;
+    }
+    .arrow{
+        width: 30px;
+        height: 30px;
+        margin: -10px 0 0 -10px;
+    }
+    .arrow2{
+        margin: 0px 0 0 -20px;
+    }
+    #main #img_right{
+        height: 350px;
+    }
+    #main #menue p {
+        padding: 50px 0 0 0;
+    }
+    #main #menue a{
+        margin-top: 50px;
+    }
+    #main #img_left{
+        height: 300px;
+    }
+    #main #eboutique{
+        height: 500px;
+    }
+    #main #eboutique p{
+        padding: 50px 0 0 0;
+    }
+    #main #eboutique a {
+        margin-top: 50px;
     }
 }

@@ -16,3 +16,13 @@ p {
     font-family: roboto;
     font-size: 20px;
 }
+
+@media screen and (max-width: 900px){
+    h2{
+        padding: 100px 0 0 50px;
+    }
+    p{
+        padding: 50px 0 0 50px;
+        
+    }
+}
