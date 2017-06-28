@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Accueil , La Tour d'Argent</title>
+    <link rel="stylesheet" type="text/css" href="static/css/main.css">
+    <link rel="stylesheet" type="text/css" href="static/css/home.css">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="static/js/script.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display" rel="stylesheet">
+    <link rel="icon" type="image/png" href="static/images/logo_icon.png">
+</head>
+<body>
+    <!-- PICTURE WITH NAME OF THE PAGE -->
+    <section id="home">
+        <img class="title_logo" src="static/images/logo.png">
+        <div class="arrow" id="double_arrow_scroll"></div>
+    </section>
+    
+    <!-- HEADERS (NORMAL + BURGER) -->
+    <header>
+			<nav id="normal">
+				<ul>
+					<li><a href="/menu"><span>CARTE ET MENUS</span></a></li>
+					<li><a href="/restaurant"><span>LE RESTAURANT</span></a></li>
+					<li class="flag"><a href="/"><img src="static/images/logo_header.png" width="60px"></a></li>
+					<li id="bookingButton"><span>RESERVATION</span></li>
+					<a href="/access"><li><span>ACCÈS</span></li></a>
+				</ul>
+			</nav>
+			<nav id="burger">
+				<ul>
+					<li id="burgerButton"><img src="static/images/logo_header.png" width="60px"></li>
+				</ul>
+			</nav>
+    </header>
+    
+    <!-- PRESENTATION OF THE RESTAURANT -->
+    <section id="presentation">
+        <section id="text_contain">
+            <h2>BIENVENUE</h2>
+            <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit.<br> Architecto sed, sit ab? Dicta repellat quibusdam quae nostrum deserunt perferendis aliquid eos architecto tempora modi natus voluptatibus, alias nulla quis nobis.
+            </p>
+            <button id="bookingButton">RÉSERVER</button>
+        </section>
+        <div class="arrow2" id="double_arrow_scroll2"></div>
+    </section>
+    
+    <!-- MAIN BLOCK -->
+    <section id="main">
+        <div id="img_right"></div>
+        <div id="menue">
+            <h3>NOTRE CARTE ET MENU</h3>
+            <p>Philippe Labbé propose une cuisine traditionnelle revisitée qui connaît depuis plusieurs années les honneurs des gastronomes du monde entier.</p>
+            <a href="/menu"><span>CARTE ET MENUS</span></a>
+        </div>
+        <div id="img_left"></div>
+        <div id="eboutique">
+            <h3>NOTRE E-BOUTIQUE</h3>
+            <p>La Tour d'Argent mets en vente ses cuvées de vin, champagne ainsi que des coffrets cadeaux réalisé avec les recettes de notre chef.<br>Commandez en ligne dès maintenant en cliquand sur le bouton ci-dessous.</p>
+            <a href="https://www.comptoirdelatour.com/fr/"><span>E-BOUTIQUE</span></a>
+        </div>
+    </section>
+    
+    <!-- FOOTER -->
+    <footer>
+        <div class="legaleAndCredits">
+            <ul>
+                <li><a href="/mentions_legales">Mentions Légales</a></li>
+                <li><a href="/credit">Crédits</a></li>
+            </ul>
+        </div>
+        <div class="social_media">
+            <ul>
+                <li><a href="https://www.facebook.com/latourdargent/?ref=br_rs" class="facebook"></a></li>
+                <li><a href="https://www.instagram.com/tourdargentparis/" class="insta"></a></li>
+                <li><a href="https://twitter.com/latourdargent?lang=fr" class="twitter"></a></li>
+            </ul>
+        </div>
+    </footer>
+    
+    <!-- BURGER MENU -->
+    <div id="burgerMenu">
+        <a type="button" id="hideBurger">
+            <img src="static/images/picto/noun_1014483_cc.png">
+        </a>
+        <ul>
+            <li><a href="menu">CARTE ET MENUS</a></li>
+            <li><a href="/restaurant">LE RESTAURANT</a></li>
+            <li class="flag"><a href="/">ACCUEIL</a></li>
+            <li id="bookingButton">RESERVATION</li>
+            <a href="/access"><li>ACCÈS</li></a>
+        </ul>
+    </div>
+    
+    <!-- POP PUP FOR BOOKING A TABLE -->
+    <div id="popUpBooking">
+	    <div class="table">
+	        <span>TABLE</span>
+	    </div>
+	    <div class="room">
+	        <span>SALON</span>
+	    </div>
+        <form>
+            <input type="text" name="firstname" placeholder="Nom">
+            <input type="email" name="email" placeholder="Email"><br>
+            <input type="text" name="lastname" placeholder="Prenom">
+            <input type="tel" name="telephone" placeholder="Téléphone"><br>
+            <p>POUR QUAND VOULEZ VOUS RESERVER ?</p>
+            <input type="datetime-local" name="resa" style="width:470px">
+            <p>COMBIEN DE PERSONNES?</p>
+            <input type="number" name="clients" min="0" max="6"><br>
+            <button class="sendButton">ENVOYER</button><br>
+            <a class="closeButton" href="javascript:;">FERMER</a>
+        </form>
+    </div>
+    
+    <!-- OPACITY MASK FOR THE POP UP APPARITION -->
+    <div class="opacityMask"></div>
+</body>
+</html>

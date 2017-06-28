@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Mentions légales , La Tour D'Argent</title>
+    <link rel="stylesheet" type="text/css" href="../static/css/main.css">
+    <link rel="stylesheet" type="text/css" href="../static/css/legale.css">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="../static/js/script.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display" rel="stylesheet">
+    <link rel="icon" type="image/png" href="../static/images/logo_icon.png">
+</head>
+<body>
+    <header>
+			<nav id="normal">
+				<ul>
+					<li><a href="/menu"><span>CARTE ET MENUS</span></a></li>
+					<li><a href="/restaurant"><span>LE RESTAURANT</span></a></li>
+					<li><a href="/"><img src="../static/images/logo_header.png" width="60px"></a></li>
+					<li id="bookingButton"><span>RESERVATION</span></li>
+					<a href="/access"><li><span>ACCÈS</span></li></a>
+				</ul>
+			</nav>
+			<nav id="burger">
+				<ul>
+					<li id="burgerButton"><img src="static/images/logo_header.png" width="60px"></li>
+				</ul>
+			</nav>
+    </header>
+    <h2>MENTIONS LÉGALES</h2>
+    <p>La Tour d’Argent, société anonyme au capital de 4.573.471 euros, dont le siège social est situé 15-17, quai de la Tournelle, 75005 Paris (+33 (0)1 43 54 23 31), immatriculée sous le numéro RCS Paris B 349 610 006 est l’éditeur du site web de la Tour d’Argent.</p>
+    <p>Le directeur de la publication est Monsieur André Terrail.</p>
+    <p>Le site Internet de la Tour d’Argent est une œuvre de l’esprit protégée par les lois de la propriété intellectuelle.</p>
+    <p>Le site et chacun des éléments qui le composent sont la propriété exclusive de la Tour d’Argent.</p>
+    <p>Toute reproduction ou représentation, intégrale ou partielle, du site ou quelconque élément qui le compose, est interdite de même que leur altération.</p>
+    <p>Les marques et noms de domaine qui apparaissent sur le site Internet de la Tour d’Argent sont la propriété exclusive de la Tour d’Argent.</p>
+    <p>Toute reproduction ou utilisation de ces marques ou noms de domaine, de quelque manière et à quelque titre que ce soit, est interdite.</p>
+    <p>La création de liens hypertextes vers le site Internet de la Tour d’Argent ne peut être faite qu’avec l’autorisation écrite et préalable de la Tour d’Argent.</p>
+    <p>La Tour d’Argent décline toute responsabilité concernant le contenu de sites liés au site Internet de la Tour d’Argent.</p>
+    <p>La Tour d’Argent est susceptible de collecter vos données personnelles. Seule la Tour d’Argent est destinataire de ces données personnelles.</p>
+    <p>La Tour d’Argent est susceptible de transmettre ces données personnelles à ses partenaires.</p>
+    <p>Conformément à la loi “informatique et libertés” du 6 janvier 1978 modifiée en 2004, vous bénéficiez d’un droit d’accès et de rectification aux informations qui vous concernent, que vous pouvez exercer en vous adressant au Département Communication, 15, quai de la Tournelle, 75005 Paris ou par e-mail à  secretariat@tourdargent.com</p>
+    <p>La conservation de vos données personnelles a fait l’objet d’une déclaration simplifiée à la CNIL enregistrée sous le numéro 1425472.</p>
+    <p>La Tour d’Argent souhaite implanter un cookie dans votre ordinateur. Il stocke des informations relatives à votre navigation sur notre site (les pages que vous avez consultées, la date et l’heure de la consultation, etc.). Nous pourrons lire ces informations lors de vos prochaines visites.</p>
+    <p>La durée de conservation de ces informations dans votre ordinateur est infinie. Ce cookie ne nous permet pas de vous identifier. Vous pouvez vous opposer à l’enregistrement des cookies en paramétrant votre navigateur.</p>
+    <p>La Tour d’Argent a fait tous ces efforts pour s’assurer que les informations accessibles par l’intermédiaire de son site Internet sont exactes. Cependant, nous ne garantissons en aucune manière que ces informations soient exactes, complètes et à jour.</p>
+    <p>La Tour d’Argent n’assure aucune garantie, expresse ou tacite, concernant tout ou partie de son site Internet.</p>
+    <p>En aucun cas, La Tour d’Argent ne peut être tenue pour responsable d’un quelconque dommage direct ou indirect, quelle qu’en soit la nature, découlant de l’utilisation de son site Internet.</p>
+    <p>© La Tour d’Argent 2017</p>
+    
+    <footer>
+        <div class="legaleAndCredits">
+            <ul>
+                <li><a href="/mentions_legales">Mentions Légales</a></li>
+                <li><a href="/credit">Crédits</a></li>
+            </ul>
+        </div>
+        <div class="social_media">
+            <ul>
+                <li><a href="https://www.facebook.com/latourdargent/?ref=br_rs" class="facebook"></a></li>
+                <li><a href="https://www.instagram.com/tourdargentparis/" class="insta"></a></li>
+                <li><a href="https://twitter.com/latourdargent?lang=fr" class="twitter"></a></li>
+            </ul>
+        </div>
+    </footer>
+    
+    <div id="popUpBooking">
+	    <div class="table">
+	        <span>TABLE</span>
+	    </div>
+	    <div class="room">
+	        <span>SALON</span>
+	    </div>
+        <form>
+            <input type="text" name="firstname" placeholder="Nom">
+            <input type="email" name="email" placeholder="Email"><br>
+            <input type="text" name="lastname" placeholder="Prenom">
+            <input type="tel" name="telephone" placeholder="Téléphone"><br>
+            <p>POUR QUAND VOULEZ VOUS RESERVER ?</p>
+            <input type="datetime-local" style="width:470px">
+            <p>COMBIEN DE PERSONNES?</p>
+            <input type="number" min="0" max="6"><br>
+            <button class="sendButton">ENVOYER</button><br>
+            <a class="closeButton" href="javascript:;">FERMER</a>
+        </form>
+    </div>
+</body>
+</html>

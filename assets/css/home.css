@@ -1,0 +1,339 @@
+#home {
+    width: 100%;
+    height: 90vh;;
+    background: url("../images/header_home.png") no-repeat bottom;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+}
+
+#home img {
+    display: block;
+    margin-left:auto;
+    margin-right: auto;
+    padding-top: 150px;
+    width: 70%;
+    animation: title_appear 2s;
+    cursor: pointer;
+}
+
+@keyframes title_appear {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+.arrow,
+.arrow:before{
+    position: absolute;
+    left: 50%;
+    top: 60%;
+}
+
+.arrow{
+    width: 40px;
+    height: 40px;
+    
+    margin: -20px 0 0 -20px;
+    -webkit-transform: rotate(45deg);
+    border-left: none;
+    border-top: none;
+    border-right: 1px #000 solid;
+    border-bottom: 1px #000 solid;
+    
+    cursor: pointer;
+}
+  
+.arrow:before{
+    content: '';
+    width: 20px;
+    height: 20px;
+    top: 50%;
+    margin: -10px 0 0 -10px;
+    border-left: none;
+    border-top: none;
+    border-right: 1px #000 solid;
+    border-bottom: 1px #000 solid;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-name: arrow;
+}
+  
+@keyframes arrow{
+    from{opacity: 1;}
+    to{
+        opacity: 0;
+        transform: translate(-10px, -10px);}
+}
+
+#presentation {
+    width: 100%;
+    height: 600px;
+    background-color: white;
+    text-align: center;
+    font-family: 'Playfair Display', serif;
+}
+
+#presentation #text_contain {
+    width: 40%;
+    margin: auto;
+    margin-top: 150px;
+}
+
+#presentation h2 {
+    font-size: 40px;
+    font-weight: 100;
+}
+
+#presentation p {
+    margin-top: 100px;
+    
+    font-family: roboto;
+    font-size: 19px;
+    font-weight: 100;
+}
+
+#presentation button {
+    margin: 10% 0 10% 0;
+    width: 200px;
+    height: 40px;
+    overflow: hidden;
+    
+    font-family: 'Playfair Display', serif;;
+    font-size: 17px;
+    font-weight: 100;
+    
+    cursor: pointer;
+    border: none;
+    background-color: rgba(0, 0, 0, 0.9);
+    color: white;
+    transition: all 0.4s;
+}
+
+#presentation button:hover {
+    font-size: 18px;
+    
+    width: 100%;
+}
+
+.arrow2,
+.arrow2:before{
+    position: absolute;
+    left: 50%;
+}
+
+.arrow2{
+    width: 40px;
+    height: 40px;
+    
+    margin: -20px 0 0 -20px;
+    -webkit-transform: rotate(45deg);
+    border-left: none;
+    border-top: none;
+    border-right: 1px #000 solid;
+    border-bottom: 1px #000 solid;
+    
+    cursor: pointer;
+}
+  
+.arrow2:before{
+    content: '';
+    width: 20px;
+    height: 20px;
+    top: 50%;
+    margin: -10px 0 0 -10px;
+    border-left: none;
+    border-top: none;
+    border-right: 1px #000 solid;
+    border-bottom: 1px #000 solid;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-name: arrow2;
+}
+  
+@keyframes arrow2{
+    from{opacity: 1;}
+    to{
+        opacity: 0;
+        transform: translate(-10px, -10px);}
+}
+    
+#main {
+    overflow: hidden;
+}
+
+#main #menue{
+    float: left;
+    width: 50%;
+    height: 600px;
+    background-color: white;
+}
+
+#main #menue h3{
+    text-align: center;
+    font-weight: 100;
+    font-size: 30px;
+    padding-top: 50px;
+}
+
+#main #menue p {
+    text-align: center;
+    width: 70%;
+    margin: auto;
+    padding: 100px 0 0 0;
+    
+    font-family: roboto;
+    font-size: 16px;
+    font-weight: 100;
+}
+
+#main #menue a {
+    width: 200px;
+    height: 40px;
+    display: block;
+    margin : 0 auto;
+    margin-top: 100px;
+    
+    font-family: 'Playfair Display', serif;
+    font-size: 17px;
+    font-weight: 100;
+    text-align: center;
+    
+    border: none;
+    background-color: rgba(0, 0, 0, 0.9);
+    color: white;
+    transition: all 0.4s;
+}
+
+#main #menue a span{
+    vertical-align: -webkit-baseline-middle;
+}
+
+#main #menue a:hover {
+    width: 400px;
+    
+    cursor: pointer;
+}
+
+#main #img_right{
+    float: right;
+    width: 50%;
+    height: 600px;
+    background: url("../images/plats/img_right.jpg") 100% 50% no-repeat;
+    background-attachment:fixed;
+    background-size: cover;
+}
+
+#main #img_left{
+    float: left;
+    width: 50%;
+    height: 600px;
+    background: url("../images/img_left.jpg") no-repeat;
+    background-attachment: fixed;
+    background-size:contain;
+}
+
+#main #eboutique{
+    float: right;
+    width: 50%;
+    height: 600px;
+    background-color: white;
+}
+
+#main #eboutique h3 {
+    text-align: center;
+    font-weight: 100;
+    font-size: 30px;
+    padding-top: 50px;
+}
+
+#main #eboutique p {
+    text-align: center;
+    width: 70%;
+    margin: auto;
+    padding: 100px 0 0 0;
+    
+    font-family: roboto;
+    font-size: 16px;
+    font-weight: 100;
+}
+
+#main #eboutique a {
+    width: 200px;
+    height: 40px;
+    display: block;
+    margin : 0 auto;
+    margin-top: 100px;
+    
+    
+    font-family: 'Playfair Display', serif;
+    font-size: 17px;
+    font-weight: 100;
+    text-align: center;
+    
+    border: none;
+    background-color: rgba(0, 0, 0, 0.9);
+    color: white;
+    transition: all 0.4s;
+}
+
+#main #eboutique a span{
+    vertical-align: -webkit-baseline-middle;
+}
+
+#main #eboutique a:hover {
+    width: 400px;
+    
+    cursor: pointer;
+}
+
+@media screen and (max-width: 900px){
+    #home img {
+        padding-top: 200px;
+    }
+}
+
+@media screen and (max-width: 700px){
+    #home {
+        background-attachment: scroll;
+    }
+    
+    #home img{
+        padding-top: 250px;
+    }
+    
+    #presentation #text_contain {
+        width: 80%;
+        margin-top: 40px;
+    }
+    
+    #presentation p{
+        margin-top: 50px;
+    }
+    
+    #main #menue{
+        float: none;
+        width: 100%;
+        height: 450px;
+    }
+    
+    #main #img_right{
+        float: none;
+        width: 100%;
+        background-attachment: scroll;
+        background-size:100%;
+    }
+    
+    #main #img_left{
+        float: none;
+        width: 100%;
+        height: 400px;
+        background-attachment: scroll;
+        background-size:100%;
+        
+    }
+    
+    #main #eboutique{
+        float: none;
+        width: 100%;
+    }
+}

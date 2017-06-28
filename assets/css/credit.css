@@ -1,0 +1,18 @@
+header {
+    position: fixed;
+    width: 100%;
+}
+
+h2{
+    padding: 200px 0 0 400px;
+    font-family: 'Playfair Display', serif;
+    font-size: 40px;
+    font-weight: 100;
+    margin-bottom: 30px;
+}
+
+p {
+    padding: 0 0 0 400px;
+    font-family: roboto;
+    font-size: 20px;
+}

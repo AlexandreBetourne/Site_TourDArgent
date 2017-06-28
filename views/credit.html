@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Crédit , La Tour D'Argent</title>
+    <link rel="stylesheet" type="text/css" href="../static/css/main.css">
+    <link rel="stylesheet" type="text/css" href="../static/css/credit.css">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="../static/js/script.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display" rel="stylesheet">
+    <link rel="icon" type="image/png" href="../static/images/logo_icon.png">
+</head>
+<body>
+    <header>
+			<nav id="normal">
+				<ul>
+					<li><a href="/menu"><span>CARTE ET MENUS</span></a></li>
+					<li><a href="/restaurant"><span>LE RESTAURANT</span></a></li>
+					<li><a href="/"><img src="../static/images/logo_header.png" width="60px"></a></li>
+					<li id="bookingButton"><span>RESERVATION</span></li>
+					<a href="/access"><li><span>ACCÈS</span></li></a>
+				</ul>
+			</nav>
+			<nav id="burger">
+				<ul>
+					<li id="burgerButton"><img src="static/images/logo_header.png" width="60px"></li>
+				</ul>
+			</nav>
+    </header>
+    <h2>CRÉDIT</h2>
+    <p>Direction graphique</p>
+    <p>PIATON & ASSOCIÉS</p>
+    <p>41 rue Vaneau</p>
+    <p>75007 Paris</p>
+    <p>&nbsp;</p>
+    <p>Conception, réalisation & développement</p>
+    <p>ADVERIS</p>
+    <p>130 Boulevard Haussmann</p>
+    <p>75008 Paris</p>
+    <p>&nbsp;</p>
+    <p>Hébergement & Monitoring</p>
+    <p>AAMSET</p>
+    <p>5 Rue Ambroise Thomas</p>
+    <p>75009 Paris</p>
+    <p>&</p>
+    <p>ONLINE SAS</p>
+    <p>BP 438</p>
+    <p>75366 Paris Cedex 08</p>
+    <p>&nbsp;</p>
+    <p>Droits d’auteur photographes :</p>
+    <p>Archives de la Tour d’Argent</p>
+    <p>Pierre-Emmanuel de Leusse, Spartium pour la Tour d’Argent</p>
+    <p>Herminie Philippe pour la Tour d’Argent</p>
+    <p>Hirama pour la Tour d’Argent</p>
+    <p>Maÿlis Devaux pour la Tour d’Argent</p>
+    
+    <footer>
+        <div class="legaleAndCredits">
+            <ul>
+                <li><a href="/mentions_legales">Mentions Légales</a></li>
+                <li><a href="/credit">Crédits</a></li>
+            </ul>
+        </div>
+        <div class="social_media">
+            <ul>
+                <li><a href="https://www.facebook.com/latourdargent/?ref=br_rs" class="facebook"></a></li>
+                <li><a href="https://www.instagram.com/tourdargentparis/" class="insta"></a></li>
+                <li><a href="https://twitter.com/latourdargent?lang=fr" class="twitter"></a></li>
+            </ul>
+        </div>
+    </footer>
+    <div id="popUpBooking">
+	    <div class="table">
+	        <span>TABLE</span>
+	    </div>
+	    <div class="room">
+	        <span>SALON</span>
+	    </div>
+        <form>
+            <input type="text" name="firstname" placeholder="Nom">
+            <input type="email" name="email" placeholder="Email"><br>
+            <input type="text" name="lastname" placeholder="Prenom">
+            <input type="tel" name="telephone" placeholder="Téléphone"><br>
+            <p>POUR QUAND VOULEZ VOUS RESERVER ?</p>
+            <input type="datetime-local" style="width:470px">
+            <p>COMBIEN DE PERSONNES?</p>
+            <input type="number" min="0" max="6"><br>
+            <button class="sendButton">ENVOYER</button><br>
+            <a class="closeButton" href="javascript:;">FERMER</a>
+        </form>
+    </div>
+</body>
+</html>

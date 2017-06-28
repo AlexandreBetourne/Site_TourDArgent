@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Accès , La Tour d'Argent</title>
+    <link rel="stylesheet" type="text/css" href="../static/css/main.css">
+    <link rel="stylesheet" type="text/css" href="../static/css/access.css">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="../static/js/script.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display" rel="stylesheet">
+    <link rel="icon" type="image/png" href="../static/images/logo_icon.png">
+</head>
+<body>
+    <section id="top_img">
+        <h2>ACCÈS</h2>
+        <div class="arrow" id="double_arrow_scroll"></div>
+    </section>
+    <header>
+			<nav id="normal">
+				<ul>
+					<li><a href="/menu"><span>CARTE ET MENUS</span></a></li>
+					<li><a href="/restaurant"><span>LE RESTAURANT</span></a></li>
+					<li><a href="/"><img src="../static/images/logo_header.png" width="60px"></a></li>
+					<li id="bookingButton"><span>RESERVATION</span></li>
+					<a href="/access"><li><span>ACCÈS</span></li></a>
+				</ul>
+			</nav>
+			<nav id="burger">
+				<ul>
+					<li id="burgerButton"><img src="static/images/logo_header.png" width="60px"></li>
+				</ul>
+			</nav>
+    </header>
+    <section id="contain">
+        <div id="map"></div>
+        <div class="accessInfo">
+            <p>15, quai de la Tournelle - 75005 Paris (Présence d'un voiturier)</p>
+            <div>
+                <p class="metroStationName">Station Pont Marie</p>
+                <img class="metroStationLogo" src="../static/images/Paris_m_7_jms.svg.png" width="25px">
+            </div>
+            <p>Téléphone : +33 (0)1 43 54 23 31</p>
+            <p>Email : resa@tourdargent.com</p>
+        </div>
+    </section>
+    <footer>
+        <div class="legaleAndCredits">
+            <ul>
+                <li><a href="/mentions_legales">Mentions Légales</a></li>
+                <li><a href="/credit">Crédits</a></li>
+            </ul>
+        </div>
+        <div class="social_media">
+            <ul>
+                <li><a href="https://www.facebook.com/latourdargent/?ref=br_rs" class="facebook"></a></li>
+                <li><a href="https://www.instagram.com/tourdargentparis/" class="insta"></a></li>
+                <li><a href="https://twitter.com/latourdargent?lang=fr" class="twitter"></a></li>
+            </ul>
+        </div>
+    </footer>
+    
+    <div id="burgerMenu">
+        <a type="button" id="hideBurger">
+            <img src="static/images/picto/noun_1014483_cc.png">
+        </a>
+        <ul>
+            <li><a href="menu">CARTE ET MENUS</a></li>
+            <li><a href="/restaurant">LE RESTAURANT</a></li>
+            <li class="flag"><a href="/">ACCUEIL</a></li>
+            <li id="bookingButton">RESERVATION</li>
+            <a href="/access"><li>ACCÈS</li></a>
+        </ul>
+    </div>
+    <div class="opacityMask"></div>
+    <div id="popUpBooking">
+	    <div class="table">
+	        <span>TABLE</span>
+	    </div>
+	    <div class="room">
+	        <span>SALON</span>
+	    </div>
+        <form>
+            <input type="text" name="firstname" placeholder="Nom">
+            <input type="email" name="email" placeholder="Email"><br>
+            <input type="text" name="lastname" placeholder="Prenom">
+            <input type="tel" name="telephone" placeholder="Téléphone"><br>
+            <p>POUR QUAND VOULEZ VOUS RESERVER ?</p>
+            <input type="datetime-local" style="width:470px">
+            <p>COMBIEN DE PERSONNES?</p>
+            <input type="number" min="0" max="6"><br>
+            <button class="sendButton">ENVOYER</button><br>
+            <a class="closeButton" href="javascript:;">FERMER</a>
+        </form>
+    </div>
+    <script>
+       function initMap() {
+        var tour = {lat: 48.849771, lng: 2.355042};
+        var map = new google.maps.Map(document.getElementById('map'), {
+            zoom: 13,
+            center: tour,
+            styles: style,
+            scrollwheel: false,
+        });
+        var marker = new google.maps.Marker({
+          position: tour,
+          map: map
+        });
+      }
+    </script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA2lXtLETMGhetMnDefgbFLOwwgxezJIPU&callback=initMap"
+  async defer>
+    </script>
+</body>
+</html>

@@ -1,0 +1,833 @@
+#top_img{
+    width: 100%;
+    height: 90vh;
+    background: url("../images/header_restaurant.png") no-repeat bottom;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+}
+
+#top_img h2 {
+    text-align: center;
+    font-size: 130px;
+    font-weight: 100;
+    padding-top: 200px;
+    animation: title_appear 2s;
+}
+
+@keyframes title_appear {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+.arrow,
+.arrow:before{
+    position: absolute;
+    left: 50%;
+    top: 60%;
+}
+
+.arrow{
+    width: 40px;
+    height: 40px;
+    
+    margin: -20px 0 0 -20px;
+    -webkit-transform: rotate(45deg);
+    border-left: none;
+    border-top: none;
+    border-right: 1px #000 solid;
+    border-bottom: 1px #000 solid;
+    
+    cursor: pointer;
+}
+  
+.arrow:before{
+    content: '';
+    width: 20px;
+    height: 20px;
+    top: 50%;
+    margin: -10px 0 0 -10px;
+    border-left: none;
+    border-top: none;
+    border-right: 1px #000 solid;
+    border-bottom: 1px #000 solid;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-name: arrow;
+}
+  
+@keyframes arrow{
+    from{opacity: 1;}
+    to{
+        opacity: 0;
+        transform: translate(-10px, -10px);}
+}
+
+#main {
+    width: 100%;
+}
+
+#main .intro {
+    font-size: 17px;
+    
+    text-align: center;
+    width: 60%;
+    margin: auto;
+    padding-top: 100px;
+}
+
+#main .intro .paragraph1 {
+    padding: 10px;
+    font-family: roboto;
+}
+
+#main .intro .paragraph2 {
+    padding: 10px;
+    font-family: roboto;
+}
+
+#main .intro .paragraph3 {
+    padding: 10px;
+    font-family: roboto;
+}
+
+#main .history {
+    overflow: hidden;
+}
+
+#main .history h3 {
+    text-align: center;
+    font-weight: 100;
+    font-size: 40px;
+    padding:100px 0 20px 0;
+}
+
+#main .history .preambule{
+    width: 95%;
+    margin: auto;
+    overflow: hidden;
+    margin-top: 200px;
+}
+
+#main .history .preambule_text {
+    width: 40%;
+    padding: 50px 0 0 80px;
+    text-align: right;
+    float: left;
+}
+
+#main .history .preambule_text h4 {
+    padding-bottom: 40px;
+    font-size: 30px;
+    font-weight: 100;
+}
+
+#main .history .preambule_text p{
+    font-family: roboto;
+    font-weight: 100;
+}
+
+#main .history .preambule_img{
+    width: 50%;
+    float: left;
+}
+
+#main .history .preambule_img img{
+    width: 450px;
+    padding: 0 0 0 100px;
+}
+
+#main .history .hostellerie {
+    width: 95%;
+    margin: auto;
+    overflow: hidden;
+}
+
+#main .history .hostellerie_img {
+    padding: 100px 0 0 0%;
+    float: right;
+}
+
+#main .history .hostellerie_img img {
+    width: 300px;
+}
+
+#main .history .hostellerie_text{
+    width: 40%;
+    float: right;
+    padding: 200px 0 0 100px;
+}
+
+#main .history .hostellerie_text h4 {
+    padding-bottom: 40px;
+    font-size: 30px;
+    font-weight: 100;
+}
+
+#main .history .hostellerie_text p{
+    font-family: roboto;
+    font-weight: 100;
+}
+
+#main .history .fourchette{
+    width: 95%;
+    margin: auto;
+    overflow: hidden;
+    margin-top: 150px;
+}
+
+#main .history .fourchette_text{
+    width: 40%;
+    padding: 50px 0 0 80px;
+    text-align: right;
+    float: left;
+}
+
+#main .history .fourchette_text h4{
+    padding-bottom: 40px;
+    font-size: 30px;
+    font-weight: 100;
+}
+
+#main .history .fourchette_text p{
+    font-family: roboto;
+    font-weight: 100;
+}
+
+#main .history .fourchette_img{
+    width: 50%;
+    float: left;
+}
+
+#main .history .fourchette_img img{
+    width: 500px;
+    padding: 0 0 0 100px;
+}
+
+#main .history .oyer {
+    width: 95%;
+    margin: auto;
+    overflow: hidden;
+    padding-top: 150px;
+}
+
+#main .history .oyer_img {
+    padding: 0 0 0 17%;
+    float: right;
+}
+
+#main .history .oyer_img img {
+    width: 400px;
+}
+
+#main .history .oyer_text{
+    width: 40%;
+    float: right;
+    padding: 50px 0 0 100px;
+}
+
+#main .history .oyer_text h4 {
+    padding-bottom: 40px;
+    font-size: 30px;
+    font-weight: 100;
+}
+
+#main .history .oyer_text p{
+    font-family: roboto;
+    font-weight: 100;
+}
+
+#main .history .revolution{
+    width: 95%;
+    margin: auto;
+    overflow: hidden;
+    margin-top: 200px;
+}
+
+#main .history .revolution_text{
+    width: 40%;
+    padding: 0 0 0 80px;
+    text-align: right;
+    float: left;
+}
+
+#main .history .revolution_text h4{
+    padding-bottom: 40px;
+    font-size: 30px;
+    font-weight: 100;
+}
+
+#main .history .revolution_text p{
+    font-family: roboto;
+    font-weight: 100;
+}
+
+#main .history .revolution_img{
+    width: 50%;
+    float: left;
+}
+
+#main .history .revolution_img img{
+    width: 500px;
+    padding: 0 0 0 100px;
+}
+
+#main .history .lecoq {
+    width: 95%;
+    margin: auto;
+    overflow: hidden;
+    padding-top: 150px;
+}
+
+#main .history .lecoq_img {
+    padding: 0 0 0 17%;
+    float: right;
+}
+
+#main .history .lecoq_img img {
+    width: 400px;
+}
+
+#main .history .lecoq_text{
+    width: 40%;
+    float: right;
+    padding: 150px 0 0 100px;
+}
+
+#main .history .lecoq_text h4 {
+    padding-bottom: 40px;
+    font-size: 30px;
+    font-weight: 100;
+}
+
+#main .history .lecoq_text p{
+    font-family: roboto;
+    font-weight: 100;
+}
+
+#main .history .troisE{
+    width: 95%;
+    margin: auto;
+    overflow: hidden;
+    margin-top: 200px;
+}
+
+#main .history .troisE_text{
+    width: 40%;
+    padding: 50px 0 0 80px;
+    text-align: right;
+    float: left;
+}
+
+#main .history .troisE_text h4{
+    padding-bottom: 40px;
+    font-size: 30px;
+    font-weight: 100;
+}
+
+#main .history .troisE_text p{
+    font-family: roboto;
+    font-weight: 100;
+}
+
+#main .history .troisE_img{
+    width: 50%;
+    float: left;
+}
+
+#main .history .troisE_img img{
+    width: 500px;
+    padding: 0 0 0 100px;
+}
+
+#main .history .delair {
+    width: 95%;
+    margin: auto;
+    overflow: hidden;
+    padding-top: 150px;
+}
+
+#main .history .delair_img {
+    padding: 0 0 0 12%;
+    float: right;
+    width: 450px;
+}
+
+#main .history .delair_text{
+    width: 40%;
+    float: right;
+    padding: 0 0 0 100px;
+}
+
+#main .history .delair_text h4 {
+    padding-bottom: 40px;
+    font-size: 30px;
+    font-weight: 100;
+}
+
+#main .history .delair_text p{
+    font-family: roboto;
+    font-weight: 100;
+}
+
+#main .history .ENcoffee{
+    width: 95%;
+    margin: auto;
+    overflow: hidden;
+    margin-top: 200px;
+}
+
+#main .history .ENcoffee_text{
+    width: 40%;
+    padding: 50px 0 0 80px;
+    text-align: right;
+    float: left;
+}
+
+#main .history .ENcoffee_text h4{
+    padding-bottom: 40px;
+    font-size: 30px;
+    font-weight: 100;
+}
+
+#main .history .ENcoffee_text p{
+    font-family: roboto;
+    font-weight: 100;
+}
+
+#main .history .ENcoffee_img{
+    width: 50%;
+    float: left;
+    width: 500px;
+    padding: 0 0 0 100px;
+}
+
+#main .history .decor {
+    width: 95%;
+    margin: auto;
+    overflow: hidden;
+    padding-top: 150px;
+}
+
+#main .history .decor_img {
+    padding: 0 0 0 12%;
+    float: right;
+    width: 450px;
+}
+
+#main .history .decor_text{
+    width: 40%;
+    float: right;
+    padding: 50px 0 0 100px;
+}
+
+#main .history .decor_text h4 {
+    padding-bottom: 40px;
+    font-size: 30px;
+    font-weight: 100;
+}
+
+#main .history .decor_text p{
+    font-family: roboto;
+    font-weight: 100;
+}
+
+#main .history .growth{
+    width: 95%;
+    margin: auto;
+    overflow: hidden;
+    margin-top: 200px;
+}
+
+#main .history .growth_text{
+    width: 40%;
+    padding: 50px 0 0 80px;
+    text-align: right;
+    float: left;
+}
+
+#main .history .growth_text h4{
+    padding-bottom: 40px;
+    font-size: 30px;
+    font-weight: 100;
+}
+
+#main .history .growth_text p{
+    font-family: roboto;
+    font-weight: 100;
+}
+
+#main .history .growth_img{
+    width: 50%;
+    float: left;
+    width: 500px;
+    padding: 0 0 0 100px;
+}
+
+@media screen and (max-width: 1100px){
+    
+    #main .history .preambule_text{
+        float: inherit;
+        text-align: center;
+        left: 50%;
+        padding: 10px;
+        margin: auto;
+    }
+    #main .history .preambule_img{
+        float: inherit;
+        margin: auto;
+    }
+    #main .history .preambule_img img{
+        padding: 0;
+        margin: auto;
+    }
+    #main .history .hostellerie_img{
+        float: inherit;
+        padding: 0;
+        margin: auto;
+    }
+    #main .history .hostellerie_img img {
+        padding: 0;
+    }
+    #main .history .hostellerie_text{
+        float: inherit;
+        text-align: center;
+        padding: 0;
+        margin: auto;
+    }
+    #main .history .fourchette_text{
+        float: inherit;
+        text-align: center;
+        padding: 0;
+        margin: auto;
+    }
+    #main .history .fourchette_img{
+        float: inherit;
+        margin: auto;
+    }
+    #main .history .fourchette_img img{
+        padding: 0;
+    }
+    #main .history .oyer_img{
+        float: inherit;
+        padding: 0;
+        margin: auto;
+    }
+    #main .history .oyer_text{
+        float: inherit;
+        text-align: center;
+        padding: 0;
+        margin: auto;
+    }
+    #main .history .revolution_text{
+        float: inherit;
+        text-align: center;
+        padding: 0;
+        margin: auto;
+    }
+    #main .history .revolution_img{
+        float: inherit;
+        margin: auto;
+    }
+    #main .history .revolution_img img{
+        padding: 0;
+    }
+    #main .history .lecoq_img{
+        float: inherit;
+        padding: 0;
+        margin: auto;
+    }
+    #main .history .lecoq_text{
+        float: inherit;
+        text-align: center;
+        padding: 0;
+        margin: auto;
+    }
+    #main .history .troisE_text{
+        text-align: center;
+        float: inherit;
+        padding: 0;
+        margin: auto;
+    }
+    #main .history .troisE_img{
+        float: inherit;
+        margin: auto;
+    }
+    #main .history .troisE_img img{
+        padding: 0;
+    }
+    #main .history .delair_img{
+        float: inherit;
+        padding: 0;
+        margin: auto;
+    }
+    #main .history .delair_text{
+        text-align: center;
+        float: inherit;
+        padding: 0;
+        margin: auto;
+    }
+    #main .history .ENcoffee_text{
+        text-align: center;
+        float: inherit;
+        padding: 0;
+        margin: auto;
+    }
+    #main .history .ENcoffee_img{
+        float: inherit;
+        padding: 0;
+        margin: auto;
+    }
+    #main .history .decor_img{
+        float: inherit;
+        padding: 0;
+        margin: auto;
+    }
+    #main .history .decor_text{
+        float: inherit;
+        text-align: center;
+        padding: 0;
+        margin: auto;
+    }
+    #main .history .growth_text{
+        float: inherit;
+        text-align: center;
+        padding: 0;
+        margin: auto;
+    }
+    #main .history .growth_img{
+        float: inherit;
+        padding: 0;
+        margin: auto;
+    }
+}
+
+@media screen and (max-width: 900px){
+    #top_img h2{
+        font-size: 100px;
+    }
+    #main .history .preambule{
+        margin-top: 0;
+    }
+    #main .history .preambule_text{
+        width: 80%;
+        float: none;
+    }
+    #main .history .preambule_img{
+        float: none;
+        width: 100%;
+        margin: auto;
+        text-align: center;
+        margin-bottom: 50px;
+        display: block;
+    }
+    #main .history .hostellerie_text{
+        width: 80%;
+    }
+    #main .history .hostellerie_img{
+        width: 100%;
+        margin: auto;
+        display: block;
+        text-align: center;
+    }
+    #main .history .fourchette_text{
+        width: 80%;
+    }
+    #main .history .fourchette_img{
+        width: 100%;
+        margin: auto;
+        display: block;
+        text-align: center;
+    }
+    #main .history .oyer_text{
+        width: 80%;
+    }
+    #main .history .oyer_img{
+        width: 100%;
+        margin: auto;
+        display: block;
+        text-align: center;
+    }
+    #main .history .revolution_text{
+        width: 80%;
+    }
+    #main .history .revolution_img{
+        width: 100%;
+        margin: auto;
+        display: block;
+        text-align: center;
+    }
+    #main .history .lecoq_text{
+        width: 80%;
+    }
+    #main .history .lecoq_img{
+        width: 100%;
+        margin: auto;
+        display: block;
+        text-align: center;
+    }
+    #main .history .troisE_text{
+        width: 80%;
+    }
+    #main .history .troisE_img{
+        width: 100%;
+        margin: auto;
+        display: block;
+        text-align: center;
+    }
+    #main .history .delair_text{
+        width: 80%:
+    }
+    #main .history .delair_img{
+        width: 100%;
+        margin: auto;
+        display: block;
+        text-align: center;
+    }
+    #main .history .ENcoffee_text{
+        width: 80%;
+    }
+    #main .history .ENcoffee_img{
+        width: 100%;
+        margin: auto;
+        display: block;
+        text-align: center;
+    }
+    #main .history .decor_text{
+        width: 80%;
+    }
+    #main .history .decor_img{
+        width: 100%;
+        margin: auto;
+        display: block;
+        text-align: center;
+    }
+    #main .history .growth_text{
+        width: 80%;
+    }
+    #main .history .growth_img{
+        width: 100%;
+        margin: auto;
+        display: block;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 700px){
+    #top_img h2{
+        font-size: 50px;
+    }
+    
+    #main .intro{
+        width: 80%;
+    }
+    
+    .arrow,.arrow:before{
+        top : 65%;
+    }
+    #main .history .preambule{
+        margin-top: 0;
+    }
+    #main .history .preambule_text{
+        width: 80%;
+        float: none;
+    }
+    #main .history .preambule_img{
+        float: none;
+        width: 100%;
+        margin: auto;
+        text-align: center;
+        margin-bottom: 50px;
+        display: block;
+    }
+    #main .history .hostellerie_text{
+        width: 80%;
+    }
+    #main .history .hostellerie_img{
+        width: 100%;
+        margin: auto;
+        display: block;
+        text-align: center;
+    }
+    #main .history .fourchette_text{
+        width: 80%;
+    }
+    #main .history .fourchette_img{
+        width: 100%;
+        margin: auto;
+        display: block;
+        text-align: center;
+    }
+    #main .history .oyer_text{
+        width: 80%;
+    }
+    #main .history .oyer_img{
+        width: 100%;
+        margin: auto;
+        display: block;
+        text-align: center;
+    }
+    #main .history .revolution_text{
+        width: 80%;
+    }
+    #main .history .revolution_img{
+        width: 100%;
+        margin: auto;
+        display: block;
+        text-align: center;
+    }
+    #main .history .lecoq_text{
+        width: 80%;
+    }
+    #main .history .lecoq_img{
+        width: 100%;
+        margin: auto;
+        display: block;
+        text-align: center;
+    }
+    #main .history .troisE_text{
+        width: 80%;
+    }
+    #main .history .troisE_img{
+        width: 100%;
+        margin: auto;
+        display: block;
+        text-align: center;
+    }
+    #main .history .delair_text{
+        width: 80%:
+    }
+    #main .history .delair_img{
+        width: 100%;
+        margin: auto;
+        display: block;
+        text-align: center;
+    }
+    #main .history .ENcoffee_text{
+        width: 80%;
+    }
+    #main .history .ENcoffee_img{
+        width: 100%;
+        margin: auto;
+        display: block;
+        text-align: center;
+    }
+    #main .history .decor_text{
+        width: 80%;
+    }
+    #main .history .decor_img{
+        width: 100%;
+        margin: auto;
+        display: block;
+        text-align: center;
+    }
+    #main .history .growth_text{
+        width: 80%;
+    }
+    #main .history .growth_img{
+        width: 100%;
+        margin: auto;
+        display: block;
+        text-align: center;
+    }
+}

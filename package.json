@@ -1,0 +1,25 @@
+{
+  "name": "tourdargent_site",
+  "version": "1.0.0",
+  "main": "index.js",
+  "dependencies": {
+    "body-parser": "^1.17.2",
+    "express": "^4.15.3",
+    "mysql": "^2.13.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AlexandreBetourne/TourDArgent.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/AlexandreBetourne/TourDArgent/issues"
+  },
+  "homepage": "https://github.com/AlexandreBetourne/TourDArgent#readme",
+  "description": ""
+}

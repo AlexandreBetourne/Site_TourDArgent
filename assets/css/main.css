@@ -1,0 +1,347 @@
+* {
+    margin: 0;
+    padding: 0;
+    
+}
+
+.FixedHeaderError{
+    margin-top: 10vh;
+}
+
+header {
+    height: 10vh;
+    overflow: hidden;
+    display: block;
+    
+    z-index: 1000000;
+}
+
+header #normal {
+    height: 100%;
+    width: 100%;
+    z-index: 1 ;
+    background-color: white;
+    bottom: 0;
+}
+
+header #normal ul {
+    width: 100%;
+    height: 100%;
+}
+
+header #normal ul li {
+    float: left;
+    width: 20%;
+    padding-top: 25px;
+    height: 100%;
+    
+    list-style-type: none;
+    text-align: center;
+    font-family: 'Playfair Display', serif;
+    font-size: 22px;
+    text-decoration: none;
+
+}
+
+header #normal ul li span{
+    border-bottom: solid 1px transparent;
+    
+    transition: all .6s ease;
+}
+
+header #normal ul li span:hover {
+    cursor: pointer;
+    
+    border-bottom: solid 1px black;
+}
+
+header #burger {
+    display: none;
+    
+    height: 100%;
+    width: 100%;
+    z-index: 1 ;
+    background-color: white;
+    bottom: 0;
+}
+
+header #burger ul {
+    width: 100%;
+    height: 100%;
+}
+
+header #burger ul li{
+    text-align: center;
+    transform: translateY(10px);
+}
+
+#burgerMenu{
+    width: 100vw;
+    height: 100vh;
+    background-color: white;
+    z-index: 10000000;
+    display:none;
+    position: fixed;
+    top: 0;
+}
+
+#burgerMenu ul {
+    text-align: center;
+    font-family: 'Playfair Display', serif;
+    font-size: 25px;
+    
+    transform: translateY(35%);
+    line-height: 3;
+    
+}
+
+#burgerMenu #hideBurger img{
+    width: 40px;
+    padding: 25px;
+}
+
+.fixe {
+    position: fixed;
+    width: 100%;
+    top: 0;
+}
+
+footer {
+    width: 100%;
+    
+    background-color: white;
+    
+    font-family: roboto;
+}
+
+footer .legaleAndCredits{
+    float: left;
+}
+
+footer .legaleAndCredits ul li{
+    float: left;
+    list-style-type: none;
+    padding:20px;
+}
+
+footer .social_media{
+    width: 290px;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: hidden;
+    float: right;
+}
+
+footer .social_media ul li{
+    float: right;
+    list-style-type: none;
+    padding: 5%;
+}
+
+footer .social_media ul li .facebook{
+    background: url('../images/reseaux_sociaux/FB-f-Logo__black_100.png') no-repeat center;
+    background-size:contain;
+    display: block;
+    width: 25px;
+    height: 25px;
+    transition: all 0.2s linear;
+}
+
+footer .social_media ul li .facebook:hover{
+    background: url('../images/reseaux_sociaux/FB-f-Logo__blue_100.png')no-repeat center;
+    cursor: pointer;
+    background-size:contain;
+}
+
+footer .social_media ul li .insta{
+    background: url('../images/reseaux_sociaux/IG_black.png')no-repeat center;
+    background-size:contain;
+    display: block;
+    width: 25px;
+    height: 25px;
+    transition: all 0.2s linear;
+}
+
+footer .social_media ul li .insta:hover {
+    background: url('../images/reseaux_sociaux/IG_color.png')no-repeat center;
+    cursor: pointer;
+    background-size:contain;
+}
+
+footer .social_media ul li .twitter{
+    background: url('../images/reseaux_sociaux/Twitter_Logo_Black.png')no-repeat center;
+    background-size:contain;
+    display: block;
+    width: 25px;
+    height: 25px;
+    transition: all 0.2s linear;
+}
+
+footer .social_media ul li .twitter:hover {
+    background: url('../images/reseaux_sociaux/Twitter_Logo_Blue.png')no-repeat center;
+    background-size:contain;
+    cursor: pointer;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+    outline: none;
+}
+
+.opacityMask{
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    
+    background-color: white;
+    opacity: 0.6;
+    
+    z-index: 100;
+    position: fixed;
+    display: none;
+}
+
+#popUpBooking {
+    width: 600px;
+    height: 500px;
+    display: none;
+    top: 50%;
+    margin-top: -250px;
+    left: 50%;
+    margin-left: -300px;
+    position: fixed;
+    z-index: 101;
+    
+    background-color: white;
+    border: solid 1px grey;
+}
+
+#popUpBooking .table {
+    height: 100%;
+    width: 50%;
+    float: left;
+    
+    text-align: center;
+    line-height: 450px;
+    
+    transition: 0.3s ease;
+}
+
+#popUpBooking .table span {
+    vertical-align: middle;
+    display: inline-block;
+    
+    font-size: 25px;
+}
+
+#popUpBooking .table:hover {
+    cursor: pointer;
+    
+    background-color: black;
+    color: white;
+}
+
+#popUpBooking .room {
+    height: 100%;
+    width: 50%;
+    float: left;
+    
+    text-align: center;
+    line-height: 450px;
+    
+    transition: 0.3s ease;
+}
+
+#popUpBooking .room span {
+    vertical-align: middle;
+    display: inline-block;
+    
+    font-size: 25px;
+}
+
+#popUpBooking .room:hover {
+    cursor: pointer;
+    
+    background-color: black;
+    color: white;
+}
+
+#popUpBooking form {
+    display: none;
+    overflow: hidden;
+    
+    width: 100%;
+    padding: 20px 0 0 0;
+    
+    line-height: 3;
+    text-align: center;
+}
+
+#popUpBooking form input{
+    height: 30px;
+    margin: 0 15px;
+    width: 215px;
+    
+    text-align: center;
+}
+
+#popUpBooking form .sendButton{
+    height: 40px;
+    width: 215px;
+    margin: 30px 0 0 0;
+    
+    background-color: black;
+    color: white;
+    border: none;
+    
+    font-size: 15px;
+    
+    transition: 0.5s ease;
+}
+
+#popUpBooking form .closeButton{
+    height: 40px;
+    width: 215px;
+    margin: 0;
+    
+    color: black;
+    border: none;
+    
+    font-size: 15px;
+}
+
+#popUpBooking form .sendButton:hover{
+    width: 470px;
+    cursor: pointer;
+}
+
+#popUpBooking form .closeButton:hover{
+    cursor: pointer;
+}
+
+@media screen and (max-width: 1040px){
+    header nav ul li {
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width: 900px){
+    header #burger {
+        display: block;
+    }
+    
+    header #normal{
+        display: none;
+    }
+    
+    footer h5{
+        margin-left: 5%;
+    }
+}

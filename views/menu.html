@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="fr">
+	<head>
+		<meta charset="UTF-8">
+		<title>Carte et Menus, La Tour D'Argent</title>
+		<link rel="stylesheet" type="text/css" href="../static/css/main.css">
+		<link rel="stylesheet" type="text/css" href="../static/css/menu.css">
+		<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<script src="../static/js/script.js"></script>
+		<link rel="icon" type="image/png" href="../static/images/logo_icon.png">
+		<link href="https://fonts.googleapis.com/css?family=Playfair+Display" rel="stylesheet">
+	</head>
+	<body>
+		<section id="top_img">
+			<h2>CARTE ET MENUS</h2>
+			<div class="arrow" id="double_arrow_scroll"></div>
+		</section>
+		<header>
+			<nav id="normal">
+				<ul>
+					<li><a href="/menu"><span>CARTE ET MENUS</span></a></li>
+					<li><a href="/restaurant"><span>LE RESTAURANT</span></a></li>
+					<li><a href="/"><img src="../static/images/logo_header.png" width="60px"></a></li>
+					<li id="bookingButton"><span>RESERVATION</span></li>
+					<a href="/access"><li><span>ACCÈS</span></li></a>
+				</ul>
+			</nav>
+			<nav id="burger">
+				<ul>
+					<li id="burgerButton"><img src="static/images/logo_header.png" width="60px"></li>
+				</ul>
+			</nav>
+    </header>
+		<section id="choice">
+			<div class="carte">
+				<h3>CARTE</h3>
+				<h5><span type="button" id="showCarte">VOIR PLUS</span></h5>
+			</div>
+			<div class="menu">
+				<h3>MENUS</h3>
+				<h5><span type="button" id="showMenue">VOIR PLUS</span></h5>
+			</div>
+		</section>
+		<div id="burgerMenu">
+        <a type="button" id="hideBurger">
+            <img src="static/images/picto/noun_1014483_cc.png">
+        </a>
+        <ul>
+            <li><a href="menu">CARTE ET MENUS</a></li>
+            <li><a href="/restaurant">LE RESTAURANT</a></li>
+            <li class="flag"><a href="/">ACCUEIL</a></li>
+            <li id="bookingButton">RESERVATION</li>
+            <a href="/access"><li>ACCÈS</li></a>
+        </ul>
+        </div>
+		<div id="mask_carte">
+		    <a type="button" id="hideCarte">
+			    <img src="static/images/picto/noun_1014483_cc.png">
+			</a>
+			<h4>NOTRE CARTE</h4>
+			<h6>MISE EN BOUCHE</h6>
+			<p class="supp40">(l'élégance du partage)</p>
+			<p class="mealName">CARROTE D'ARNAUD AUBAGNE</p>
+			<p class="mealDescription">Aracbnéenne, crème épicée, safran, fenouil, coriandre, noisette, pampeplemousse</p>
+			<p class="mealName">ARTICHAUT</p>
+			<p class="mealDescription">Belle chip croquante</p>
+			<p class="mealName">BETTRAVE CAILLOU</p>
+			<p class="mealDescription">Kéfir, anis, basilic Thaï</p>
+			<p class="mealName">POMME VERTE DES JARDINS DE BRIEVE</p>
+			<p class="mealDescription">Coque de raifort, jus de livèche</p>
+			
+			<img src="static/images/picto/duck.png">
+			
+			<h6>HORS D'OEUVRE</h6>
+			<p class="supp40">(Mets délicats ou petites pièces à partager en attendant vos entrées)</p>
+			<p class="mealName">FEVETTE DE ROGNONAS DE LA FAMILLE BOYER</p>
+			<p class="mealDescription">A la "française", glace béarnaise, crumble de poitrine paysanne, oseille</p>
+			
+			<img src="static/images/picto/duck.png">
+			
+			<h6>ENTRÉES</h6>
+			<p class="supp40">(ou petits entremets)</p>
+			<p class="mealName">ASPERGES BLANCHES XXL BIO DE FRÉDÉRIC POUPARD - 88€</p>
+			<p class="mealDescription">Basilic et fraises ciflorette, sorbet parmesan, vinaigre balsamique traditionnel de Modène "extrea vecchio", huile d'olive "1000" de Philippe Chansigaud, soupe glacée au citron</p>
+			<p class="mealName">LANGOUSTE PUCE ROYALE - 145€</p>
+			<p class="mealDescription">A la nage épicée citronelle et limequat, condiment de Macadamia, floralie d'herbes et fleurs, premiers jeunes légumes des jardins de Saint-Hilaire</p>
+			<p class="mealName">FOIE GRAS DE CANARD (POUR DEUX PERSONNES) - 89€ P.P</p>
+			<p class="mealDescription">Basilic et fraises ciflorette, sorbet parmesan, vinaigre balsamique traditionnel de Modène "extrea vecchio", huile d'olive "1000" de Philippe Chansigaud, soupe glacée au citron</p>
+			<p class="mealName">BROCHET SAUVAGE DES GRAVIÈRES DE VÉTHEUIL, QUENELLE HOMMAGE AU GRAND-PÈRE - 78€</p>
+			<p class="mealDescription">Sauce fleurette gratinée, morillles blondes et brunes, oxalis doré, pourpre et verte</p>
+			
+			<img src="static/images/picto/duck.png">
+			
+			<h6>POISSONS</h6>
+			<p class="supp40">(L'art de la fraicheur)</p>
+			<p class="mealName">TURBOT SAUVAGE DE ROSCOFF - 118€</p>
+			<p class="mealDescription">Rôti aux pousses de verdures, feuilles de capucines, fraises veres, pommes Ratte confites, jus de volaille acidulé aux aromates</p>
+			<p class="mealName">SAINT -PIERRE DE LIGNE DE ROSCOFF - 87€</p>
+			<p class="mealDescription">Cuisiné à la nacre, bohémienne de petits pois et carottes nouvelles, jus de homard acidulé, citron vert</p>
+			<p class="mealName">HOMARD BLEU DE CASIER DES ÎLES CHAUSEY (EN DEUX FAÇONS) - 152€</p>
+			<p class="mealDescription">Les pinces : délicatements infusées à la camomille, groseilles et petits pois
+La queue : pochée lentement dans un beurre d'agrumes, sabayon au vin Xérès, fricassée de petits pois et morilles au pourpier, fleur de ciboulette</p>
+           
+            <img src="static/images/picto/duck.png">
+           
+            <h6>ROTS</h6>
+			<p class="supp40">(Ou pièces de résistance)</p>
+			<p class="mealName">BŒUF DE L'AUBRAC - 118€</p>
+			<p class="mealDescription">Morceau choisi rôti, raviole ouverte de queue braisée, ketchupe de pommes vertes artichauts poivrades rôti, jus corsé</p>
+			<p class="mealName">AGNEAU DE LAIT DE L'AVEYRON - 88€</p>
+			<p class="mealDescription">Selle, côte et gigot à la puntarella, pomme rôties, crumble d'agneau, jus acidulé au vinaigre et curry</p>
+			<p class="mealName">RIS DE VEAU FERMIER - 148€</p>
+			<p class="mealDescription">Doré u sautoire, grillotiné de gratons, morilles étuvées au jus de savagnon émulsion d'ail des ours, sucs de parmesan di-Reggiano, baselle</p>
+			<p class="mealName">CANETON DE CHALLANS - 94€</p>
+			<p class="mealDescription">Rôti aux épices, crackers de canard, sanguette épicée, fumet de réglisse, navets confits, oignons nouveaux rôtis </p>
+			<p class="mealName">CANETON MAZARINE (EN DEUX SERVICES) - 120€</p>
+			<p class="mealDescription">1er service : Rôti en bigarade, voilé d'asperges vertes au zestes, mousseline de petits pois à l'orange, pomme soufflées</p>
+			<p class="mealDescription">2e service : Gras de cuisse braisée aux navets primeurs, poivre de Timut, confiture d'orange bigarade, feuille de moutarde</p>
+			
+			<img src="static/images/picto/duck.png">
+			
+			<h6>FROMAGES</h6>
+			<p class="supp40">(Affinés par Laurent Dubois, notre Maître Fromager un des Meilleurs Ouvriers de France 2000)</p>
+			<p class="mealName">SÉLECTION DE FROMAGES - 32€</p>
+			<p class="mealName">COMPTÉ D'EXEPTION TRENTE-SIX-MOIS - 16€</p>
+			<p class="mealDescription">Granges Maillot, Famille Badoz</p>
+			
+			<img src="static/images/picto/duck.png">
+			
+			<h6>LES FANTASIES DE LA TOUR</h6>
+			<p class="supp40">(Préparées au guéridon pour l'ensemble de votre table)</p>
+			<p class="mealName">CRÊPES MADEMOISELLE - 54€</p>
+			<p class="mealDescription">Sorbet minuteau caillé de lait cru zesté de Laurent Dubois</p>
+			<p class="mealName">CHOCOLAT LAIT - 46€</p>
+			<p class="mealDescription">Mousse, caramel, sorbet chocolat blanc ambré, llait déshydraté.</p>
+			<p class="mealDescription">Servi avec notre café d'execption Kona d'Hualalai à Hawaï</p>
+			
+			<img src="static/images/picto/duck.png">
+			
+			<h6>ENTREMETS et DOUCEURS</h6>
+			<p class="supp40">(Tentation et délices à commander en début de repas)</p>
+			<p class="mealName">FLEURS PRINTANIÈRES - 39€</p>
+			<p class="mealDescription">Floralies cristallisées, mousse de rose, sorbet framboise et champagne rosé, gelée de miel de notre toit, barbe à papa</p>
+			<p class="mealName">RHUBARBE - 38€</p>
+			<p class="mealDescription">Comme une tarte croustillante, mousse de fromage blanc,
+jus de coco lié en texture, sorbet rhubarbe</p>
+			<p class="mealName">COMME UN VACHERIN, FRAISE DES BOIS, MANGUE - 45€</p>
+			<p class="mealDescription">Mikado fraise, menthe, nature, parfum d'orange et gimgembre, crème fouetée infusée au sucre Demerara épicé, verveine, menthe, basilic</p>
+			<p class="mealName">OR NOIR COMBINAISON SURPRISE COMME UNE BARRE CHOCOLATÉE - 36€</p>
+			<p class="mealDescription">Mousse légère, nougat et nougatine aux amandes, gelée de cacao,crème glacée vanillée à la fleur de sel, fleur de cacao</p>
+		</div>
+		<div id="mask_menue">
+			<a type="button" id="hideMenue">
+			<img src="static/images/picto/noun_1014483_cc.png">
+			</a>
+			<h4>NOS MENUS</h4>
+			<h6>AUTOUR DU DÉJEUNER - 105€</h6>
+			<p class="supp40">(+40€ le plat supplémentaire)</p>
+			<p class="mealName">QUENELLE DE BROCHET HOMMAGE AU GRAND-PÈRE</p>
+			<p class="mealDescription">Sauce fleurette gratinée aux écrevisses, oxalis</p>
+			<p class="mealName">GROSSES ASPERGES BLANCHES BIO DE FRÉDÉRIC POUPARD</p>
+			<p class="mealDescription">A la crème de citron de Menton, praliné salé à l'amande, jus d'asperges émulsionné à l'huile d'olive "Lessatini", soup d'asperges glacée</p>
+			
+			<img src="static/images/picto/duck.png">
+			
+			<p class="mealName">AILE DE RAIE BOUCLÉE DE PETIT BATEAU, CITRON DE MENTON</p>
+			<p class="mealDescription">Câpres, amandes, salicornes, poudre de noisettes</p>
+			<p class="mealName">FILET DE CANETON</p>
+			<p class="mealDescription">Filet de caneton rôti aux épices, émulsion de vinaigre réglissé, navets confits, oignons nouveaux rôtis</p>
+			
+			<img src="static/images/picto/duck.png">
+			
+			<p class="mealName">FRAISES CIFLORETTE XXL</p>
+			<p class="mealDescription">Sur un biscuit onctueux Traou Mad, crème glacée italienne à la fève Tonka marbré de granité</p>
+			<p class="mealName">OR NOIR COMBINAISON SURPRISE COMME UNE BARRE CHOCOLATÉE</p>
+			<p class="mealDescription">Mousse légère, nougat et nougatine aux amandes, 
+				gelée de cacao,
+				crème glacée vanillée à la fleur de sel, fleur de cacao
+			</p>
+			<img src="static/images/picto/duck.png">
+			<h6>AUTOUR DU CANETON CROISÉ DE "LILIANE BURGAUD" - 350 €</h6>
+			<p class="supp40">(pour l'ensemble des convives)</p>
+			<p class="mealName">AVANT PLAT</p>
+			<p class="mealDescription">Abats, petits pois et feuilles d'amarante, vinaigrette de saupiquet</p>
+			<p class="mealName">1er SERVICE</p>
+			<p class="mealDescription">Oeuf de cane "monochrome", jaune acidulé aux fleurs de capucines et tagètes, courgette et betteraves jaunes</p>
+			<p class="mealName">2e SERVICE</p>
+			<p class="mealDescription">Suprême, rôti au Porto, marmelade de Sucrine, puntarella, pamplemousse rose lié à l’épeautre de Sault, émulsion d’ail des ours.</p>
+			<p class="mealName">3e SERVICE</p>
+			<p class="mealDescription">Foie gras grillé, laqué au vieux balsamique tradition, cristalline de laitue de mer, tuile d’araignée de mer, rhubarbe tendre, vinaigrette d’huîtres</p>
+			<p class="mealName">4e SERVICE</p>
+			<p class="mealDescription">Cuisse braisée aux premières cerises, chou pointu, gel de griotte acidulé, fleur de sureau, lierre terrestre</p>
+			<p class="mealName">DESSERT</p>
+			<p class="mealDescription">Pour les petits et les grands, « souvenir d’enfance » 
+				Interprétation d’une feuillantine de brick aux vanilles, Tahitensis de Tahiti, Panifolia d’Inde façon millefeuille
+			</p>
+			
+			<img src="static/images/picto/duck.png">
+			
+			<h6>LE CANNETON FRÉDÉRIC DELAIRE – 240€</h6>
+			<p class="supp40">(A partir de deux personnes et pour l’ensemble de la table)</p>
+			<p class="prevent">Pour donner à ce plat emblématique toute l’attention qu’il mérite, faites-nous le plaisir de commander VOTRE CANETON au moins deux jours à l’avance</p>
+			
+			<img src="static/images/picto/duck.png">
+			
+			<h6>IMAGINATION DE PHILIPPE EN SIX SERVICES – 350 €</h6>
+			<p class="supp40">(Pour l’ensemble des convives)</p>
+		</div>
+        <footer>
+            <div class="legaleAndCredits">
+                <ul>
+                    <li><a href="/mentions_legales">Mentions Légales</a></li>
+                    <li><a href="/credit">Crédits</a></li>
+                </ul>
+            </div>
+            <div class="social_media">
+                <ul>
+                    <li><a href="https://www.facebook.com/latourdargent/?ref=br_rs" class="facebook"></a></li>
+                    <li><a href="https://www.instagram.com/tourdargentparis/" class="insta"></a></li>
+                    <li><a href="https://twitter.com/latourdargent?lang=fr" class="twitter"></a></li>
+                </ul>
+            </div>
+        </footer>
+        <div class="opacityMask"></div>
+		<div id="popUpBooking">
+		    <div class="table">
+	        <span>TABLE</span>
+            </div>
+            <div class="room">
+                <span>SALON</span>
+            </div>
+            <form>
+                <input type="text" name="firstname" placeholder="Nom">
+                <input type="email" name="email" placeholder="Email"><br>
+                <input type="text" name="lastname" placeholder="Prenom">
+                <input type="tel" name="telephone" placeholder="Téléphone"><br>
+                <p>POUR QUAND VOULEZ VOUS RESERVER ?</p>
+                <input type="datetime-local" style="width:470px">
+                <p>COMBIEN DE PERSONNES?</p>
+                <input type="number" min="0" max="6"><br>
+                <button class="sendButton">ENVOYER</button><br>
+            <a class="closeButton" href="javascript:;">FERMER</a>
+            </form>
+		</div>
+	</body>
+</html>

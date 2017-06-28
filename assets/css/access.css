@@ -1,0 +1,118 @@
+#top_img{
+    width: 100%;
+    height: 90vh;
+    background: url("../images/access.png") no-repeat center;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+}
+
+#top_img h2 {
+    text-align: center;
+    font-size: 130px;
+    font-weight: 100;
+    padding-top: 200px;
+    animation: title_appear 2s;
+}
+
+@keyframes title_appear {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+.arrow,
+.arrow:before{
+    position: absolute;
+    left: 50%;
+    top: 60%;
+}
+
+.arrow{
+    width: 40px;
+    height: 40px;
+    
+    margin: -20px 0 0 -20px;
+    -webkit-transform: rotate(45deg);
+    border-left: none;
+    border-top: none;
+    border-right: 1px #000 solid;
+    border-bottom: 1px #000 solid;
+    
+    cursor: pointer;
+}
+  
+.arrow:before{
+    content: '';
+    width: 20px;
+    height: 20px;
+    top: 50%;
+    margin: -10px 0 0 -10px;
+    border-left: none;
+    border-top: none;
+    border-right: 1px #000 solid;
+    border-bottom: 1px #000 solid;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-name: arrow;
+}
+  
+@keyframes arrow{
+    from{opacity: 1;}
+    to{
+        opacity: 0;
+        transform: translate(-10px, -10px);}
+}
+
+#contain {
+    width: 100%;
+    margin: auto;
+    
+    overflow: hidden;
+}
+
+#map {
+    width: 100vw;
+    height: 400px;
+    
+}
+
+.accessInfo{
+    
+    text-align: center;
+    font-family: roboto;
+    line-height: 3;
+}
+
+.accessInfo div{
+    overflow: hidden;
+    margin: auto;
+    width: 160px;
+}
+
+.accessInfo div .metroStationName{
+    float: left;
+}
+
+.accessInfo div .metroStationLogo{
+    float: left;
+    transform: translate(5px, 10px);
+}
+
+@media screen and (max-width: 400px){
+    #top_img h2{
+        font-size: 100px;
+    }
+}
+
+@media screen and (max-width: 1200px){
+    #map{
+        margin: auto;
+        float: none; 
+    }
+    
+    .accessInfo{
+        float: none;
+        text-align: center;
+        margin: auto;
+    }
+}
