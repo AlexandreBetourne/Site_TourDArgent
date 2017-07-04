@@ -12,10 +12,13 @@
     <link rel="icon" type="image/png" href="../static/images/logo_icon.png">
 </head>
 <body>
+    <!-- PICTURE WITH NAME OF THE PAGE -->
     <section id="top_img">
         <h2>ACCÈS</h2>
         <div class="arrow" id="double_arrow_scroll"></div>
     </section>
+    
+    <!-- HEADERS (NORMAL + BURGER) -->
     <header>
 			<nav id="normal">
 				<ul>
@@ -32,6 +35,8 @@
 				</ul>
 			</nav>
     </header>
+    
+    <!-- MAIN CONTAIN -->
     <section id="contain">
         <div id="map"></div>
         <div class="accessInfo">
@@ -44,6 +49,8 @@
             <p>Email : resa@tourdargent.com</p>
         </div>
     </section>
+    
+    <!-- FOOTER -->
     <footer>
         <div class="legaleAndCredits">
             <ul>
@@ -60,6 +67,7 @@
         </div>
     </footer>
     
+    <!-- MENU BURGER -->
     <div id="burgerMenu">
         <a type="button" id="hideBurger">
             <img src="static/images/picto/noun_1014483_cc.png">
@@ -72,6 +80,8 @@
             <a href="/access"><li>ACCÈS</li></a>
         </ul>
     </div>
+    
+    <!-- POP UP BOOKING + MASK -->
     <div class="opacityMask"></div>
     <div id="popUpBooking">
 	    <div class="table">
@@ -93,6 +103,8 @@
             <a class="closeButton" href="javascript:;">FERMER</a>
         </form>
     </div>
+    
+    <!-- SCRIPT FOR GOOGLE MAP -->
     <script>
        function initMap() {
         var tour = {lat: 48.849771, lng: 2.355042};
